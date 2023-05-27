@@ -14,6 +14,10 @@ function createIncrementor(n) {
 }
 
 const addOne = createIncrementor(1);
+const addTen = createIncrementor(10);
 
 console.log(addOne(10));
 console.log(addOne(41));
+
+console.log(addTen(10));
+console.log(addTen(41));
