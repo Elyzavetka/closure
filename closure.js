@@ -4,4 +4,5 @@ function createCalcFunction(n) {
   };
 }
 
-createCalcFunction(42);
+const calc = createCalcFunction(42);
+calc();
