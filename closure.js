@@ -1,8 +1,19 @@
-function createCalcFunction(n) {
-  return function () {
-    console.log(1000 * n);
+// function createCalcFunction(n) {
+//   return function () {
+//     console.log(1000 * n);
+//   };
+// }
+
+// const calc = createCalcFunction(42);
+// calc();
+
+function createIncrementor(n) {
+  return function (num) {
+    return n + num;
   };
 }
 
-const calc = createCalcFunction(42);
-calc();
+const addOne = createIncrementor(1);
+
+console.log(addOne(10));
+console.log(addOne(41));
